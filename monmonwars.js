@@ -1,11 +1,11 @@
-/* MONMON-WARS.js
+/* monmonwars.js
 *
 *  Game Pertarungan dengan metode flip-coin.
 *  Terdapat 3 monster masing masing mempunyai elemen berbeda
 *  yang dapat dipilih untuk menemani petualangan di dunia MONMON.
 *  Masing-masing elemen yang berbeda dapat saling kuat dan melemahkan.
 *  Jadi pikirkan baik baik sebelum menentukan pilihan monstermu.
-*  http://jsbin.com/gijodicetu/1/edit?js,console
+*  http://jsbin.com/fozoxetobu/1/edit?js,console
 *
 *  Faris Widyantho
 *  Miracle Fox
