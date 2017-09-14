@@ -56,7 +56,7 @@ Faris Widyantho - Miracle Fox 2017
 	  -AMBIL dan simpan kedalam variable namaCupu
 	  -IF value pertama TAMBAHKAN (push) dan SIMPAN karakter dengan huruf besar (kapital)
 	  -ELSE bukan value pertama TAMBAHKAN (push) dan SIMPAN karakter dengan huruf kecil
-    -ULANGI SAMPAI karakter habis
+	  -ULANGI SAMPAI karakter habis
 	  -TAMPILKAN nama terbalik dan ditambahkan CUPUmon diakhir nama.
 
 10. TAMPILKAN terimakasih sudah bermain!
