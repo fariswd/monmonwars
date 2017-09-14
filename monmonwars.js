@@ -53,7 +53,7 @@ function introChar(monster){
 
 monster = window.prompt("Ketik angka. untuk memilih karakter\n\n1. " + introChar("1") +"\n2. "+ introChar("2") +"\n3. "+ introChar("3") +"\n ","1");
 
-//loop kalau pilihan tidak ada dalam list
+//kalau user tidak pilih momon / pilihan salah
 if (monster>3 || monster<1){
   logs("Kamu harus memilih monstermu\n");
 
