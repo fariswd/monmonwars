@@ -108,16 +108,11 @@ else{
 
       var coin, rands, points;
 
-      //kenapa ga bisa loop for disini.......??
       var i =1;
         points = rounds(coin,rands,0,0,i);
         pointMonster += points[0]
         pointEnemy += points[1]
-        /*
-        console.log("point Monster: " + (pointMonster + weak));
-        console.log("point Enemy: " + pointEnemy);
-        console.log("");
-        */
+
       i = i+1;
         points = rounds(coin,rands,0,0,i);
         pointMonster += points[0]
