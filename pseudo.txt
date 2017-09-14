@@ -1,0 +1,61 @@
+MONMON WARS
+Faris Widyantho - Miracle Fox 2017
+
+1. TAMPILKAN intro pembukaan
+2. BUAT array sebagai data nama nama monster
+  -1, Lavamon, Elemen: Api, Kelemahan: Air
+  -2, Watermon, Elemen: Air, Kelemahan: Angin
+  -3, Tornadomon, Elemen: Angin, Kelemahan: Api
+
+3. TAMPILKAN input untuk user memilih monster
+  - IF user tidak memilih monster
+      -TAMPILKAN terimakasih telah bermain
+
+  - ELSE jalankan petualangan
+
+4. SIMPAN pilihan user
+
+5. TAMPILKAN intro memulai petualangan
+6. BUAT karakter musuh(ENEMY) dengan angka acak 1 s.d 3
+7. TAMPILKAN karakter musuh beserta statusnya sebagai musuh
+
+8. HITUNG kelemahan monster dari enemy
+   -IF MONSTER adalah elemen API dan ENEMY adalah elemen AIR, MAKA weakness = -1 / not efective;
+   -ELSE IF MONSTER adalah elemen API dan ENEMY adalah elemen ANGIN, MAKA weakness = +1 / very effective;
+
+   -ELSE IF MONSTER adalah elemen AIR dan ENEMY adalah elemen ANGIN, MAKA weakness = -1 / not efective;
+   -ELSE IF MONSTER adalah elemen AIR dan ENEMY adalah elemen API, MAKA weakness = +1 / very effective;
+
+   -ELSE IF MONSTER adalah elemen ANGIN dan ENEMY adalah elemen AIR, MAKA weakness = -1 / not efective;
+   -ELSE IF MONSTER adalah elemen ANGIN dan ENEMY adalah elemen API, MAKA weakness = +1 / very effective;
+
+   -ELSE weakness = 0 / setara
+
+9. TAMPILKAN kotak dialog untuk user pilihan LAWAN atau KABUR?
+    -IF pilihan user = 1 (FIGHT)
+      -FLIP COIN GAME
+
+      TAMPILKAN intro game & rules
+      TAMPILKAN kotak dialog pilih coin (HEAD / TAILS) dengan memasukan angka 1=head, 2=tails
+      SIMPAN value COIN
+      BUAT random value untuk flip coin yang benar(menang) menggunakan math.random (antara 1-2)
+      BANDINGKAN value COIN dengan value RANDOM yang telah dibuat
+      -IF COIN = RANDOM value yang dibuat = TRUE; TAMBAHKAN (point+1) + weakness (monster menyerang)
+      -ELSE; TAMBAHKAN (point-1) + weakness (enemy menyerang)
+
+      ULANGI SAMPAI 3x (3 ronde) mulai dari MENAMPILKAN kotak dialog sampai dengan MEMBANDINGKAN value coin
+
+      JUMLAH point yang didapat dari kemenangan.
+      JIKA jumlah poin MONSTER > poin ENEMY = KEMENANGAN
+      SEBALIKNYA JIKA jumlah poin ENEMY > MONSTER = KEKALAHAN
+
+    -IF pilihan user = 2 (RUN / KABUR)
+      RUBAH dan TAMPILKAN nama monster dari user yang dibalik dan ditambahkan cupu ditengah namanya
+	  -SIMPAN nama dan panjang dari nama monster dan dikurangi 3 (menghilangkan "mon")
+	  -BUAT PENGULANGAN sebanyak panjang dari nama monster, mulai dari value besar sampai dengan 0
+	  -AMBIL dan simpan kedalam variable namaCupu
+	  -IF value pertama TAMBAHKAN (push) dan SIMPAN karakter dengan huruf besar (kapital)
+	  -ELSE bukan value pertama TAMBAHKAN (push) dan SIMPAN karakter dengan huruf kecil
+	  -TAMPILKAN nama terbalik dan ditambahkan CUPUmon diakhir nama.
+
+10. TAMPILKAN terimakasih sudah bermain!
